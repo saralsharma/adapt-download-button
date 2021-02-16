@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "full-width",
+        "half-width",
+        "both"
+      ],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Enter the instruction text for this button.",
+      "translatable": true
+    },
+    
+    "buttonLabel": {
+      "type": "string",
+      "required": false,
+      "default": "Download",
+      "title": "Button Label",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    },
+    "downloadFileName": {
+      "type": "string",
+      "required": false,
+      "default": "File-name",
+      "title": "File name",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Give a name to the file that will be downloaded.",
+      "translatable": true
+    },
+    "downloadFilePath": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "title": "File for download",
+      "inputType": "Asset:other",
+      "validators": [],
+      "help": "Select a file for download"
+    }
+  }
+}
