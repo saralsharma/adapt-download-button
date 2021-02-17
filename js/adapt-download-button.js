@@ -16,6 +16,9 @@ define([
 
         postRender: function () {
             this.setReadyStatus();
+            if (this.model.get('_setCompletionOn') === 'inview') {
+                this.setupInviewCompletion('.component-widget');
+            }
         },
 
         checkIfResetOnRevisit: function () {
@@ -26,17 +29,7 @@ define([
         },
         downloadFile: function (event) {
             Arrow.show();
-
-            if (this.model.get('_setCompletionOn') === 'inview') {
-                this.setupInviewCompletion('.component-widget');
-            }
-
-
-            if (!this.model.get('_isComplete')) {
-                this.model.set('_isComplete', true);
-                this.model.set('_isInteractionComplete', true);
-            }
-
+            this.setCompletionStatus();
         }
 
     });
