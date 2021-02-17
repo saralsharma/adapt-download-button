@@ -1,7 +1,7 @@
 {
     "name": "adapt-download-button",
-    "version": "1.0.1",
-    "framework": ">=2.1.0",
+    "version": "1.0.0",
+    "framework": ">=3.3.0",
     "repository": {
         "type": "git",
         "url": "git://github.com/saralsharma/adapt-download-button.git"
@@ -20,5 +20,5 @@
         "adapt-component",
         "adapt-download-button"
     ],
-    "license": "GPLv3"
+    "license": "GPL-3.0"
 }

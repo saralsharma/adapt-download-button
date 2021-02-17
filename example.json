@@ -9,6 +9,7 @@
   "displayTitle":"Here is a download button object",
   "body":"",
   "instruction":"Click on the button to download the file.",
+  "_setCompletionOn": "allItems",
   "buttonLabel":"Download: File name",
   "downloadFileName":"File name",
   "downloadFilePath":"file path to the repository/filename.pdf"

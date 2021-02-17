@@ -34,7 +34,19 @@
       "help": "Enter the instruction text for this button.",
       "translatable": true
     },
-    
+    "_setCompletionOn": {
+      "type": "string",
+      "required": false,
+      "default": "inview",
+      "title": "Set completion on:",
+      "enum": ["inview", "onClick"],
+      "inputType": {
+        "type": "Select",
+        "options": ["inview", "onClick"]
+      },
+      "validators": [],
+      "help": "Whether completion is based on the learner clicked the button - or just having viewed the component"
+    },
     "buttonLabel": {
       "type": "string",
       "required": false,
