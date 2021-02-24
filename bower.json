@@ -1,12 +1,11 @@
 {
     "name": "adapt-download-button",
-    "version": "1.0.0",
-    "framework": ">=3.3.0",
     "repository": {
         "type": "git",
         "url": "git://github.com/saralsharma/adapt-download-button.git"
     },
-    
+    "framework": ">=3.3.0",
+    "version": "1.0.0",
     "homepage": "https://github.com/saralsharma/adapt-download-button",
     "authors": [
         "Saral Sharma <saral.sharma@gmail.com>"
